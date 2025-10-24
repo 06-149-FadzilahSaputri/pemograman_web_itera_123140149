@@ -34,4 +34,12 @@ Aplikasi Personal Dashboard Catatan Pribadi adalah aplikasi web sederhana yang d
 6. Destructuring. Mengekstrak properti dari objek menjadi variabel terpisah secara singkat.
 7. Metode Array Modern (Higher-Order Functions). Menggunakan fungsi bawaan array seperti filter, map, dan find untuk memproses data array secara fungsional.
 8. Default Parameter. Memberikan nilai default kepada parameter fungsi jika tidak ada argumen yang diberikan.
+
 ## Screenshot
+<img width="1365" height="669" alt="Screenshot 2025-10-25 004203" src="https://github.com/user-attachments/assets/e1d64342-0d1c-42ed-9397-194f1d99388f" />
+<img width="1365" height="626" alt="Screenshot 2025-10-25 004214" src="https://github.com/user-attachments/assets/1ccf91c4-8b41-4e30-a641-9d90dbfdcf52" />
+<img width="1365" height="621" alt="Screenshot 2025-10-25 004605" src="https://github.com/user-attachments/assets/1ed31a78-a56f-4124-86aa-5f621fc917da" />
+<img width="1365" height="630" alt="Screenshot 2025-10-25 004636" src="https://github.com/user-attachments/assets/1993a890-3082-4498-8b63-e45e0c8ee2f0" />
+<img width="1365" height="626" alt="Screenshot 2025-10-25 004650" src="https://github.com/user-attachments/assets/703a046e-90f8-4122-a27f-a8df48381a98" />
+<img width="1365" height="630" alt="Screenshot 2025-10-25 004710" src="https://github.com/user-attachments/assets/81de81ad-bf07-4012-8cd2-04b48b480a68" />
+<img width="1351" height="629" alt="Screenshot 2025-10-25 004734" src="https://github.com/user-attachments/assets/9e3e9524-3c2f-4a0f-a730-7601b2372487" />
