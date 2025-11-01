@@ -47,3 +47,8 @@ Aplikasi ini dilengkapi dengan unit test untuk memastikan kualitas dan keandalan
 - Fokus pada Pengguna: Test menggunakan React Testing Library, yang mendorong penulisan test dari perspektif pengguna, seperti memastikan komponen merender dengan benar, merespons interaksi (klik, ketik), dan menampilkan pesan error dengan tepat.
 
 # Screenshot
+<img width="1365" height="722" alt="Screenshot 2025-11-01 163235" src="https://github.com/user-attachments/assets/e3b297de-2860-408b-a36c-0b04cc11a117" />
+<img width="1365" height="714" alt="Screenshot 2025-11-01 163331" src="https://github.com/user-attachments/assets/177343ca-4189-44c3-9032-0cd04227508b" />
+<img width="1352" height="721" alt="Screenshot 2025-11-01 163543" src="https://github.com/user-attachments/assets/0cb96e75-8124-4b81-9f08-c6d036f0f5d4" />
+<img width="1365" height="720" alt="Screenshot 2025-11-01 163556" src="https://github.com/user-attachments/assets/11776888-76c7-4a50-bbb7-1d0edff38426" />
+<img width="1365" height="719" alt="Screenshot 2025-11-01 163610" src="https://github.com/user-attachments/assets/dc0bfd9c-3395-474b-89d1-068885ea306c" />
