@@ -23,5 +23,5 @@ Seluruh tugas berfokus pada penerapan konsep dasar dan lanjutan dalam pengembang
 - **Live Server / Node.js** – Testing & development  
 - **Git & GitHub** – Version control dan pengumpulan tugas
 
-##Catatan 
-terdapat kesalahan pada pengumpulan tugas 1 & 2, dimana saya menginput secara manual (tidak menghubungkannya ke vscode) jadi saya baru menghubungkannya pada pengumpulan tugas ke-3. Untuk bukti saya mengumpul tugas 1 & 2 tepat waktu, bisa dilihat di commit di tgl yang sudah tertera
+## Catatan 
+terdapat kesalahan pada pengumpulan tugas 1 & 2, dimana saya menginput secara manual (tidak menghubungkannya ke vscode) jadi saya baru menghubungkannya pada pengumpulan tugas ke-3. Untuk bukti saya mengumpul tugas 1 & 2 tepat waktu, bisa dilihat di commit di tanggal yang sudah tertera
