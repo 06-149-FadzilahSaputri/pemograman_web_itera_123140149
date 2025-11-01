@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Manajemen Tugas Mahasiswa</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Tugas Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manajemen Tugas Akademik</h1>
+
+        <form id="task-form">
+            <h2>Tambah Tugas Baru</h2>
+            <input type="text" id="task-name" placeholder="Nama Tugas (Wajib)" required>
+            <input type="text" id="task-course" placeholder="Mata Kuliah">
+            <input type="date" id="task-deadline" required>
+            <button type="submit">Tambah Tugas</button>
+        </form>
+
+        <hr>
+
+        <div class="controls">
+            <div class="filter-controls">
+                <label for="filter-status">Filter Status:</label>
+                <select id="filter-status">
+                    <option value="all">Semua</option>
+                    <option value="pending">Belum Selesai</option>
+                    <option value="completed">Selesai</option>
+                </select>
+
+                <label for="filter-course">Filter Mata Kuliah:</label>
+                <input type="text" id="filter-course" placeholder="Cari Mata Kuliah...">
+            </div>
+            <p>Tugas Belum Selesai: <span id="pending-count">0</span></p>
+        </div>
+
+        <ul id="task-list">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
