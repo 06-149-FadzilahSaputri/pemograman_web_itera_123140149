@@ -1,14 +1,11 @@
-/* ------------------------------------ */
-/* 1. Variabel dan Reset Dasar */
-/* ------------------------------------ */
 :root {
-    --bg-primary: #1e1e2d; /* Latar belakang gelap utama */
-    --bg-secondary: #27293d; /* Latar belakang kartu/kontainer */
-    --text-light: #f0f0f0; /* Teks terang */
-    --text-muted: #a0a0a9; /* Teks sekunder/detail */
-    --accent-teal: #00bcd4; /* Warna aksen teal/cyan */
-    --accent-green: #4caf50; /* Hijau untuk sukses */
-    --accent-red: #ff5722; /* Merah untuk bahaya */
+    --bg-primary: #1e1e2d; 
+    --bg-secondary: #27293d; 
+    --text-light: #f0f0f0; 
+    --text-muted: #a0a0a9; 
+    --accent-teal: #00bcd4; 
+    --accent-green: #4caf50; 
+    --accent-red: #ff5722; 
     --border-color: #3f4055;
     --shadow-dark: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
@@ -20,7 +17,6 @@
 }
 
 body {
-    /* PENERAPAN FONT EKSTERNAL */
     font-family: 'Poppins', sans-serif; 
     background-color: var(--bg-primary);
     color: var(--text-light);
@@ -28,9 +24,6 @@ body {
     padding: 50px 20px;
 }
 
-/* ------------------------------------ */
-/* 2. Container dan Heading */
-/* ------------------------------------ */
 .container {
     max-width: 850px;
     margin: 0 auto;
@@ -54,7 +47,7 @@ h2 {
     margin-bottom: 20px;
     border-left: 4px solid var(--accent-teal);
     padding-left: 10px;
-    font-weight: 600; /* Ditingkatkan untuk Poppins */
+    font-weight: 600; 
 }
 
 hr {
@@ -63,9 +56,6 @@ hr {
     margin: 35px 0;
 }
 
-/* ------------------------------------ */
-/* 3. Form Input Minimalis */
-/* ------------------------------------ */
 #task-form {
     display: flex;
     flex-wrap: wrap;
@@ -110,9 +100,7 @@ hr {
     transform: translateY(-2px);
 }
 
-/* ------------------------------------ */
-/* 4. Filter dan Controls (Desain Kontras) */
-/* ------------------------------------ */
+
 .controls {
     display: flex;
     justify-content: space-between;
@@ -152,9 +140,7 @@ hr {
     border-radius: 5px;
 }
 
-/* ------------------------------------ */
-/* 5. Daftar Tugas (List Item Elegan) */
-/* ------------------------------------ */
+
 #task-list {
     list-style: none;
     padding: 0;
@@ -182,7 +168,7 @@ hr {
     display: block;
     margin-bottom: 5px;
     color: var(--text-light);
-    font-weight: 600; /* Ditingkatkan untuk Poppins */
+    font-weight: 600; 
 }
 
 .task-info p {
@@ -190,7 +176,7 @@ hr {
     font-size: 0.95rem;
 }
 
-/* Status Selesai */
+
 .completed {
     background: #2f344e !important;
     border-left: 5px solid var(--accent-green) !important;
@@ -206,9 +192,7 @@ hr {
     text-decoration: line-through;
 }
 
-/* ------------------------------------ */
-/* 6. Tombol Aksi */
-/* ------------------------------------ */
+
 .task-actions button {
     padding: 10px 18px;
     border: none;
@@ -220,7 +204,7 @@ hr {
     transition: opacity 0.3s, background-color 0.3s;
 }
 
-/* Selesaikan */
+
 .task-actions button:first-child {
     background-color: var(--accent-green);
 }
@@ -228,7 +212,7 @@ hr {
     background-color: #388e3c;
 }
 
-/* Hapus */
+
 .task-actions button:last-child {
     background-color: var(--accent-red);
 }
@@ -236,18 +220,14 @@ hr {
     background-color: #e64a19;
 }
 
-/* Tampilan tombol Batal Selesai */
 .completed .task-actions button:first-child {
-    background-color: #ff9800; /* Oranye untuk batal selesai */
+    background-color: #ff9800; 
 }
 
 .completed .task-actions button:first-child:hover {
     background-color: #f57c00;
 }
 
-/* ------------------------------------ */
-/* 7. Responsif Sederhana */
-/* ------------------------------------ */
 @media (max-width: 768px) {
     .container {
         padding: 25px;
