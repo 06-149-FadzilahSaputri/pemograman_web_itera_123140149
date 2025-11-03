@@ -4,10 +4,10 @@ Aplikasi untuk mengelola data dan nilai mahasiswa dengan fitur lengkap
 """
 
 data_mahasiswa = [
-    {"nama": "Ahmad Rizki", "nim": "2101001", "nilai_uts": 85, "nilai_uas": 88, "nilai_tugas": 90},
-    {"nama": "Siti Nurhaliza", "nim": "2101002", "nilai_uts": 78, "nilai_uas": 82, "nilai_tugas": 85},
-    {"nama": "Budi Santoso", "nim": "2101003", "nilai_uts": 65, "nilai_uas": 70, "nilai_tugas": 68},
-    {"nama": "Dewi Lestari", "nim": "2101004", "nilai_uts": 92, "nilai_uas": 95, "nilai_tugas": 93},
+    {"nama": "Atika Adelia", "nim": "123140172", "nilai_uts": 85, "nilai_uas": 88, "nilai_tugas": 90},
+    {"nama": "Fadina Mustika R", "nim": "123140157", "nilai_uts": 88, "nilai_uas": 90, "nilai_tugas": 90},
+    {"nama": "Raisya Syifa S", "nim": "123140169", "nilai_uts": 80, "nilai_uas": 80, "nilai_tugas": 80},
+    {"nama": "Hildiyah Maretasya A", "nim": "123140151", "nilai_uts": 92, "nilai_uas": 95, "nilai_tugas": 93},
     {"nama": "Eko Prasetyo", "nim": "2101005", "nilai_uts": 55, "nilai_uas": 60, "nilai_tugas": 58}
 ]
 
@@ -207,7 +207,7 @@ def menu_utama():
     """
     while True:
         print("\n" + "="*60)
-        print("PROGRAM PENGELOLAAN DATA NILAI MAHASISWA")
+        print("Program Pengelolaan Data Nilai Mahasiswa")
         print("="*60)
         print("1. Tampilkan Semua Data Mahasiswa")
         print("2. Tambah Data Mahasiswa Baru")
