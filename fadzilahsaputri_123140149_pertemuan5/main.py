@@ -277,7 +277,7 @@ def interactive_menu():
     print("\n" + "="*60)
     load_sample = input("Mau load data contoh? (y/n): ").strip().lower()
     if load_sample == 'y':
-        print("\n⏳ Memuat data contoh...")
+        print("\n Memuat data contoh...")
         initialize_sample_data(library)
         print("✓ Data contoh berhasil dimuat!")
     
@@ -329,7 +329,7 @@ def interactive_menu():
         
         elif choice == "0":
             print("\n" + "="*60)
-            print("✓ Terima kasih telah menggunakan sistem perpustakaan!")
+            print(" Terima kasih telah menggunakan sistem perpustakaan!")
             print("="*60)
             break
         
@@ -337,7 +337,7 @@ def interactive_menu():
             print("\n Pilihan tidak valid! Silakan pilih 0-9.")
         
         # Pause sebelum kembali ke menu
-        input("\n⏎ Tekan Enter untuk kembali ke menu...")
+        input("\n Tekan Enter untuk kembali ke menu...")
 
 
 def demonstrasi_oop(library: Library):
@@ -345,7 +345,7 @@ def demonstrasi_oop(library: Library):
     Demonstrasi konsep OOP yang diterapkan.
     Menjelaskan konsep-konsep yang digunakan dalam program.
     """
-    print_header("🎓 DEMONSTRASI KONSEP OOP")
+    print_header(" DEMONSTRASI KONSEP OOP")
     
     print("""
 Sistem ini menerapkan 6 konsep utama OOP:
@@ -388,7 +388,7 @@ Sistem ini menerapkan 6 konsep utama OOP:
         print("\nMethod display_info() menghasilkan output berbeda:")
         library.display_detailed_items()
     else:
-        print("\n💡 Tip: Tambahkan item dulu untuk melihat demonstrasi praktis!")
+        print("\n Tip: Tambahkan item dulu untuk melihat demonstrasi praktis!")
 
 
 def demonstrasi_otomatis():
@@ -397,33 +397,29 @@ def demonstrasi_otomatis():
     Tidak digunakan di menu utama, tapi bisa dipanggil manual.
     """
     print("="*60)
-    print("🏛️  DEMONSTRASI OTOMATIS SISTEM PERPUSTAKAAN")
+    print("  DEMONSTRASI OTOMATIS SISTEM PERPUSTAKAAN")
     print("="*60)
     
     library = Library("Perpustakaan Demo")
     
-    print("\n📥 Menambahkan data sample...")
+    print("\n Menambahkan data sample...")
     initialize_sample_data(library)
     
-    print("\n📚 Menampilkan semua item...")
+    print("\n Menampilkan semua item...")
     library.display_all_items()
     
-    print("\n🔍 Mencari item dengan keyword 'python'...")
+    print("\n Mencari item dengan keyword 'python'...")
     library.search_by_title("python")
     
-    print("\n📤 Meminjam beberapa item...")
+    print("\n Meminjam beberapa item...")
     library.borrow_item("B001")
     library.borrow_item("M001")
     
-    print("\n📊 Menampilkan statistik...")
+    print("\n Menampilkan statistik...")
     library.get_statistics()
     
     print("\n✓ Demonstrasi selesai!")
 
-
-# ============================================================================
-# ENTRY POINT
-# ============================================================================
 
 if __name__ == "__main__":
     # Mode 1: Menu Interaktif (DEFAULT)
