@@ -8,12 +8,7 @@ def clear_screen():
 
 
 def print_header(title: str):
-    """
-    Utility function untuk print header section.
-    
-    Args:
-        title (str): Judul section
-    """
+    """Utility function untuk print header section. """
     print(f"\n{'='*60}")
     print(f"  {title}")
     print(f"{'='*60}")
@@ -23,9 +18,6 @@ def initialize_sample_data(library: Library):
     """
     Menginisialisasi data sample untuk demonstrasi.
     User bisa skip ini dan input data sendiri.
-    
-    Args:
-        library (Library): Instance perpustakaan
     """
     # Sample Buku
     book1 = Book(
@@ -271,7 +263,7 @@ def interactive_menu():
         library_name = "Perpustakaan Saya"
     
     library = Library(library_name)
-    print(f"\n✓ Perpustakaan '{library.name}' berhasil dibuat!")
+    print(f"\n Perpustakaan '{library.name}' berhasil dibuat!")
     
     # Tanya apakah mau load sample data
     print("\n" + "="*60)
@@ -279,7 +271,7 @@ def interactive_menu():
     if load_sample == 'y':
         print("\n Memuat data contoh...")
         initialize_sample_data(library)
-        print("✓ Data contoh berhasil dimuat!")
+        print(" Data contoh berhasil dimuat!")
     
     # Main loop
     while True:
