@@ -1,16 +1,3 @@
-"""
-main.py
-=======
-Entry point program sistem manajemen perpustakaan.
-Program interaktif dengan menu untuk user.
-
-Author: [Nama Anda]
-Date: November 2024
-
-Cara menjalankan:
-    python main.py
-"""
-
 from library import Library
 from items import Book, Magazine
 
@@ -40,12 +27,12 @@ def initialize_sample_data(library: Library):
     Args:
         library (Library): Instance perpustakaan
     """
-    # Sample Books
+    # Sample Buku
     book1 = Book(
         item_id="B001",
         title="Pemrograman Python untuk Pemula",
         year=2023,
-        author="Dr. Budi Santoso",
+        author="Dr. Eko",
         pages=450,
         isbn="978-602-1234-56-7"
     )
@@ -54,7 +41,7 @@ def initialize_sample_data(library: Library):
         item_id="B002",
         title="Algoritma dan Struktur Data",
         year=2022,
-        author="Prof. Ahmad Dahlan",
+        author="Prof. Ilham",
         pages=520,
         isbn="978-602-9876-54-3"
     )
@@ -63,7 +50,7 @@ def initialize_sample_data(library: Library):
         item_id="B003",
         title="Machine Learning dengan Python",
         year=2024,
-        author="Dr. Siti Nurhaliza",
+        author="Dr. Martin",
         pages=680,
         isbn="978-602-5555-12-8"
     )
@@ -97,17 +84,17 @@ def initialize_sample_data(library: Library):
 
 def menu_tambah_buku(library: Library):
     """Menu untuk menambah buku baru"""
-    print_header("📖 TAMBAH BUKU BARU")
+    print_header(" TAMBAH BUKU BARU")
     
     try:
         item_id = input("ID Buku (contoh: B001): ").strip()
         if not item_id:
-            print("❌ ID tidak boleh kosong!")
+            print(" ID tidak boleh kosong!")
             return
         
         title = input("Judul Buku: ").strip()
         if not title:
-            print("❌ Judul tidak boleh kosong!")
+            print(" Judul tidak boleh kosong!")
             return
         
         year = int(input("Tahun Terbit: "))
@@ -119,24 +106,24 @@ def menu_tambah_buku(library: Library):
         library.add_item(book)
         
     except ValueError:
-        print("❌ Error: Input tahun/halaman harus berupa angka!")
+        print(" Error: Input tahun/halaman harus berupa angka!")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
 
 
 def menu_tambah_majalah(library: Library):
     """Menu untuk menambah majalah baru"""
-    print_header("📰 TAMBAH MAJALAH BARU")
+    print_header(" TAMBAH MAJALAH BARU")
     
     try:
         item_id = input("ID Majalah (contoh: M001): ").strip()
         if not item_id:
-            print("❌ ID tidak boleh kosong!")
+            print(" ID tidak boleh kosong!")
             return
         
         title = input("Judul Majalah: ").strip()
         if not title:
-            print("❌ Judul tidak boleh kosong!")
+            print(" Judul tidak boleh kosong!")
             return
         
         year = int(input("Tahun Terbit: "))
@@ -148,14 +135,14 @@ def menu_tambah_majalah(library: Library):
         library.add_item(magazine)
         
     except ValueError:
-        print("❌ Error: Input tahun/nomor edisi harus berupa angka!")
+        print(" Error: Input tahun/nomor edisi harus berupa angka!")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
 
 
 def menu_tampilkan_items(library: Library):
     """Menu untuk menampilkan items"""
-    print_header("📚 TAMPILKAN KOLEKSI")
+    print_header(" TAMPILKAN KOLEKSI")
     print("1. Tampilkan Ringkas")
     print("2. Tampilkan Detail Lengkap")
     print("3. Tampilkan Buku Saja")
@@ -172,12 +159,12 @@ def menu_tampilkan_items(library: Library):
     elif choice == "4":
         library.search_by_type("magazine")
     else:
-        print("❌ Pilihan tidak valid!")
+        print(" Pilihan tidak valid!")
 
 
 def menu_cari_item(library: Library):
     """Menu untuk mencari item"""
-    print_header("🔍 CARI ITEM")
+    print_header(" CARI ITEM")
     print("1. Cari berdasarkan Judul")
     print("2. Cari berdasarkan ID")
     print("3. Cari berdasarkan Tipe (Buku/Majalah)")
@@ -189,14 +176,14 @@ def menu_cari_item(library: Library):
         if keyword:
             library.search_by_title(keyword)
         else:
-            print("❌ Kata kunci tidak boleh kosong!")
+            print(" Kata kunci tidak boleh kosong!")
     
     elif choice == "2":
         item_id = input("\nMasukkan ID item: ").strip()
         if item_id:
             library.search_by_id(item_id)
         else:
-            print("❌ ID tidak boleh kosong!")
+            print(" ID tidak boleh kosong!")
     
     elif choice == "3":
         print("\nTipe:")
@@ -209,14 +196,14 @@ def menu_cari_item(library: Library):
         elif type_choice == "2":
             library.search_by_type("magazine")
         else:
-            print("❌ Pilihan tidak valid!")
+            print(" Pilihan tidak valid!")
     else:
-        print("❌ Pilihan tidak valid!")
+        print(" Pilihan tidak valid!")
 
 
 def menu_pinjam_item(library: Library):
     """Menu untuk meminjam item"""
-    print_header("📤 PINJAM ITEM")
+    print_header(" PINJAM ITEM")
     
     # Tampilkan item yang tersedia
     print("\nItem yang tersedia untuk dipinjam:")
@@ -232,12 +219,12 @@ def menu_pinjam_item(library: Library):
     if item_id:
         library.borrow_item(item_id)
     else:
-        print("❌ ID tidak boleh kosong!")
+        print(" ID tidak boleh kosong!")
 
 
 def menu_kembalikan_item(library: Library):
     """Menu untuk mengembalikan item"""
-    print_header("📥 KEMBALIKAN ITEM")
+    print_header(" KEMBALIKAN ITEM")
     
     # Tampilkan semua item
     library.display_all_items()
@@ -246,12 +233,12 @@ def menu_kembalikan_item(library: Library):
     if item_id:
         library.return_item(item_id)
     else:
-        print("❌ ID tidak boleh kosong!")
+        print(" ID tidak boleh kosong!")
 
 
 def menu_hapus_item(library: Library):
     """Menu untuk menghapus item"""
-    print_header("🗑️  HAPUS ITEM")
+    print_header(" HAPUS ITEM")
     
     # Tampilkan semua item
     library.display_all_items()
@@ -262,9 +249,9 @@ def menu_hapus_item(library: Library):
         if confirm == 'y':
             library.remove_item(item_id)
         else:
-            print("❌ Penghapusan dibatalkan.")
+            print(" Penghapusan dibatalkan.")
     else:
-        print("❌ ID tidak boleh kosong!")
+        print(" ID tidak boleh kosong!")
 
 
 def interactive_menu():
@@ -274,12 +261,12 @@ def interactive_menu():
     """
     # Banner
     print("="*60)
-    print("🏛️  SISTEM MANAJEMEN PERPUSTAKAAN")
+    print("  SISTEM MANAJEMEN PERPUSTAKAAN")
     print("     Object-Oriented Programming (OOP) Python")
     print("="*60)
     
     # Input nama perpustakaan
-    library_name = input("\n📝 Masukkan nama perpustakaan: ").strip()
+    library_name = input("\n Masukkan nama perpustakaan: ").strip()
     if not library_name:
         library_name = "Perpustakaan Saya"
     
@@ -297,7 +284,7 @@ def interactive_menu():
     # Main loop
     while True:
         print("\n" + "="*60)
-        print(f"📚 MENU UTAMA - {library.name.upper()}")
+        print(f" MENU UTAMA - {library.name.upper()}")
         print("="*60)
         print("1.  Tambah Buku")
         print("2.  Tambah Majalah")
@@ -347,7 +334,7 @@ def interactive_menu():
             break
         
         else:
-            print("\n❌ Pilihan tidak valid! Silakan pilih 0-9.")
+            print("\n Pilihan tidak valid! Silakan pilih 0-9.")
         
         # Pause sebelum kembali ke menu
         input("\n⏎ Tekan Enter untuk kembali ke menu...")
